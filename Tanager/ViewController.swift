@@ -7,19 +7,19 @@
 //
 
 import UIKit
+import SafariServices
 
 class ViewController: UIViewController {
 
+    let urlSession = URLSession(configuration: .default)
+    let workQueue = OperationQueue()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        workQueue.isSuspended = false
+
+        let operations = OperationFactory.getTabsOperationChain(urlSession: urlSession)
+        workQueue.addOperations(operations, waitUntilFinished: false)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
