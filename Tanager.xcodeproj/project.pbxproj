@@ -16,6 +16,7 @@
 		AB9273B2204F861200A13CCC /* GetAccessTokenOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9273B1204F861200A13CCC /* GetAccessTokenOperation.swift */; };
 		AB9273B4204F8A1600A13CCC /* GetTabsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9273B3204F8A1600A13CCC /* GetTabsOperation.swift */; };
 		AB9273B6204F8D0500A13CCC /* OperationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9273B5204F8D0500A13CCC /* OperationFactory.swift */; };
+		AB9273B9205456E900A13CCC /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9273B8205456E900A13CCC /* Tab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AB9273B1204F861200A13CCC /* GetAccessTokenOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAccessTokenOperation.swift; sourceTree = "<group>"; };
 		AB9273B3204F8A1600A13CCC /* GetTabsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTabsOperation.swift; sourceTree = "<group>"; };
 		AB9273B5204F8D0500A13CCC /* OperationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationFactory.swift; sourceTree = "<group>"; };
+		AB9273B8205456E900A13CCC /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		AB92739B204B437B00A13CCC /* Tanager */ = {
 			isa = PBXGroup;
 			children = (
+				AB9273B7205456D800A13CCC /* Model */,
 				AB9273AE204F7DFB00A13CCC /* Operations */,
 				AB92739C204B437B00A13CCC /* AppDelegate.swift */,
 				AB92739E204B437B00A13CCC /* ViewController.swift */,
@@ -82,6 +85,14 @@
 				AB9273B5204F8D0500A13CCC /* OperationFactory.swift */,
 			);
 			path = Operations;
+			sourceTree = "<group>";
+		};
+		AB9273B7205456D800A13CCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB9273B8205456E900A13CCC /* Tab.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 				AB9273B0204F7E3800A13CCC /* GetAuthenticationCodeOperation.swift in Sources */,
 				AB9273B6204F8D0500A13CCC /* OperationFactory.swift in Sources */,
 				AB92739D204B437B00A13CCC /* AppDelegate.swift in Sources */,
+				AB9273B9205456E900A13CCC /* Tab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

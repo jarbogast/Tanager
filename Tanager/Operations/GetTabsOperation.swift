@@ -10,8 +10,10 @@ import UIKit
 
 class GetTabsOperation: Operation {
     private let urlSession: URLSession
+    
     var accessToken: String?
     var instanceURL: URL?
+    var tabs: [Tab]?
     
     init(urlSession: URLSession) {
         self.urlSession = urlSession
@@ -24,8 +26,13 @@ class GetTabsOperation: Operation {
         
         let semaphore = DispatchSemaphore(value: 0)
         let tabsTask = urlSession.dataTask(with: tabsRequest, completionHandler: { (tabsData, tabsResponse, tabsError) in
-            let tabsJson = try! JSONSerialization.jsonObject(with: tabsData!, options: .allowFragments)
-            print(tabsJson)
+            if let tabsData = tabsData {
+                do {
+                    self.tabs = try JSONDecoder().decode([Tab].self, from: tabsData)
+                } catch {
+                    print(error)
+                }
+            }
             semaphore.signal()
         })
         tabsTask.resume()
