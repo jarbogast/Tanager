@@ -7,19 +7,19 @@
 //
 
 import UIKit
-import SafariServices
+import CoreData
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, TanagerViewController {
 
-    let urlSession = URLSession(configuration: .default)
-    let workQueue = OperationQueue()
+    var persistentContainer: NSPersistentContainer?
+    var urlSession: URLSession?
+    var workQueue: OperationQueue?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        workQueue.isSuspended = false
 
-        let operations = OperationFactory.getTabsOperationChain(urlSession: urlSession)
-        workQueue.addOperations(operations, waitUntilFinished: false)
+        let operations = OperationFactory.getTabsOperationChain(urlSession: urlSession!)
+        workQueue?.addOperations(operations, waitUntilFinished: false)
     }
 }
 

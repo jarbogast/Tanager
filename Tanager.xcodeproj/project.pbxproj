@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB822A212054DC45007AE604 /* TanagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB822A202054DC45007AE604 /* TanagerViewController.swift */; };
+		AB822A242054DE98007AE604 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB822A222054DE98007AE604 /* Model.xcdatamodeld */; };
 		AB92739D204B437B00A13CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92739C204B437B00A13CCC /* AppDelegate.swift */; };
 		AB92739F204B437B00A13CCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92739E204B437B00A13CCC /* ViewController.swift */; };
 		AB9273A2204B437B00A13CCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9273A0204B437B00A13CCC /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB822A202054DC45007AE604 /* TanagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanagerViewController.swift; sourceTree = "<group>"; };
+		AB822A232054DE98007AE604 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		AB927399204B437B00A13CCC /* Tanager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tanager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB92739C204B437B00A13CCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB92739E204B437B00A13CCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				AB9273A3204B437B00A13CCC /* Assets.xcassets */,
 				AB9273A5204B437B00A13CCC /* LaunchScreen.storyboard */,
 				AB9273A8204B437B00A13CCC /* Info.plist */,
+				AB822A202054DC45007AE604 /* TanagerViewController.swift */,
+				AB822A222054DE98007AE604 /* Model.xcdatamodeld */,
 			);
 			path = Tanager;
 			sourceTree = "<group>";
@@ -172,8 +178,10 @@
 				AB9273B4204F8A1600A13CCC /* GetTabsOperation.swift in Sources */,
 				AB9273B0204F7E3800A13CCC /* GetAuthenticationCodeOperation.swift in Sources */,
 				AB9273B6204F8D0500A13CCC /* OperationFactory.swift in Sources */,
+				AB822A242054DE98007AE604 /* Model.xcdatamodeld in Sources */,
 				AB92739D204B437B00A13CCC /* AppDelegate.swift in Sources */,
 				AB9273B9205456E900A13CCC /* Tab.swift in Sources */,
+				AB822A212054DC45007AE604 /* TanagerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +366,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AB822A222054DE98007AE604 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AB822A232054DE98007AE604 /* Model.xcdatamodel */,
+			);
+			currentVersion = AB822A232054DE98007AE604 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AB927391204B437B00A13CCC /* Project object */;
 }
